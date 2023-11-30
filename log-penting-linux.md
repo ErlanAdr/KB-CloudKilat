@@ -1,5 +1,5 @@
-Log - Log Penting di Server Linux
-==============================================
+# Log - Log Penting di Server Linux
+
 Pada sebuah server linux, log merupakan informasi yang direkam oleh sistem untuk mencatat aktivitas, kejadian, dan kesalahan yang terjadi selama server berjalan. Log ini sangat penting untuk pemantauan, analisis, dan pemecahan masalah. Pemahaman tentang berbagai jenis pesan log akan membantu dalam melakukan analisis pada setiap sistem yang terdapat pada server.
 
 Biasanya, log terdapat dalam berbagai file yang terletak di direktori `/var/log`. Berikut ini beberapa file log yang umum digunakan.
@@ -17,8 +17,8 @@ Biasanya, log terdapat dalam berbagai file yang terletak di direktori `/var/log`
 - **/var/log/apt/**: Berisi log terkait dengan penggunaan Management Package APT (Advanced Package Tool). Terdapat beberapa file pada direktori log ini, berikut diantaranya. history.log yang berisi riwayat perintah APT yang dijalankan oleh pengguna, mencakup instalasi, penghapusan, pembaruan, dan perintah APT lainnya. Serta, term.log yang berisi output terminal dari setiap perintah APT yang telah dijalankan.
 - **/var/log/yum.log atau /var/log/dnf.log**: Berisi log file terkait dengan penggunaan management Package yum/dnf.
 
-Command Pengecekan Log
-==============================================
+## Command Pengecekan Log
+
 Dalam penggunaannya, file-file log tersebut dapat diakses menggunakan berbagai command sesuai dengan kebutuhannya. Contoh command yang dapat digunakan diantaranya `less`, `cat`, `grep`, `tail`, dan lain-lain.
 
 Setiap Command memiliki karakteristik serta fungsi masing-masing. Berikut ini detail dari beberapa command tersebut.
