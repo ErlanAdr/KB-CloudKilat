@@ -72,3 +72,7 @@ chmod 640 test.txt
 ```
 chmod 750 direktoritest
 ```
+> [!TIP]
+> Anda dapat mengubah permission seluruh file ataupun folder pada satu direktori sekaligus dengan menggunakan command berikut.
+> - file: `find . -type f -exec chmod 644 {} \;`
+> - folder: `find . -type d -exec chmod 755 {} \;`
