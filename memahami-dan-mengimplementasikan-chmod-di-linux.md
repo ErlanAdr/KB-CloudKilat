@@ -46,3 +46,6 @@ Berikut ini contoh penerapan `chmod` dengan menggunakan numerik.
 ```
 chmod 754 [nama file]
 ```
+Pada command diatas, digit pertama menyatakan level permission untuk user, digit kedua untuk group, dan digit ketiga untuk other. 
+
+Angka `7` pada digit pertama merupakan kombinasi dari permission `4+2+1 (r,w,x)`. Angka `5` pada digit kedua merupakan kombinasi dari permission `4+0+1 (r,x)`, dan Angka `4` pada digit ketiga merupakan kombinasi dari permission `4+0+0 (r)`.
