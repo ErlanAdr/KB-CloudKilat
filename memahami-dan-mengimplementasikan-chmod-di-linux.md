@@ -49,3 +49,26 @@ chmod 754 [nama file]
 Pada command diatas, digit pertama menyatakan level permission untuk user, digit kedua untuk group, dan digit ketiga untuk other. 
 
 Angka `7` pada digit pertama merupakan kombinasi dari permission `4+2+1 (r,w,x)`. Angka `5` pada digit kedua merupakan kombinasi dari permission `4+0+1 (r,x)`, dan Angka `4` pada digit ketiga merupakan kombinasi dari permission `4+0+0 (r)`.
+
+## CHMOD untuk mengamankan File serta Direktori
+
+Pemberian permission pada file serta direktori ini perlu diperhatikan dengan seksama. Berikan permission sebagaimana yang diperlukan pada setiap user ataupun group yang tersedia. Kurangilah permission yang dianggap tidak perlu. Terutama pada file-file penting pada sistem.
+
+Dalam penerapannya, permission file serta direktori di sistem linux bisa diberikan sebagai berikut:
+- File (`user`: rw, `group`: r, `other`: r )
+```
+chmod 644 test.txt
+```
+- Direktori (`user`: rwx, `group`: rx, `other`: rx )
+```
+chmod 755 direktoritest
+```
+Untuk lebih amannya, Anda juga dapat mengurangin permission `other` menjadi `0`.
+- File (`user`: rw, `group`: r, `other`: - )
+```
+chmod 640 test.txt
+```
+- Direktori (`user`: rwx, `group`: rx, `other`: - )
+```
+chmod 750 direktoritest
+```
